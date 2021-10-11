@@ -1,4 +1,4 @@
-# REACT APP TEMPLATE
+# REACT TYPESCRIPT APP TEMPLATE
 
 [![Maintainability Status](https://api.codeclimate.com/v1/badges/f6f7ed79501f794ce74d/maintainability)](https://codeclimate.com/github/JustalK/REACT-APP/maintainability)
 ![David](https://img.shields.io/david/justalk/REACT-APP)
