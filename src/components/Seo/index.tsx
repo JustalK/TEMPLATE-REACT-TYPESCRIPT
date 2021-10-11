@@ -11,19 +11,17 @@ import { Helmet } from 'react-helmet'
  * Create the component Seo
  * @return {Object} Return the dom of the Seo page
  */
-const Seo = ({ title, description }) => {
-  return (
-    <Helmet
-      htmlAttributes={{ lang: 'en' }}
-      title={title}
-      meta={[
-        {
-          name: 'description',
-          content: description
-        }
-      ]}
-    />
-  )
-}
+const Seo = ({ title, description }) => (
+  <Helmet
+    htmlAttributes={{ lang: 'en' }}
+    title={title}
+    meta={[
+      {
+        name: 'description',
+        content: description
+      }
+    ]}
+  />
+)
 
 export default Seo

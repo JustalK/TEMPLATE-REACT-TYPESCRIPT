@@ -11,13 +11,11 @@ import Seo from '@components/Seo'
  * Create the component Home
  * @return {Object} Return the dom of the Home page
  */
-const Home = () => {
-  return (
-    <>
-      <Seo title="Home" description="Description of Home" />
-      Test
-    </>
-  )
-}
+const Home = () => (
+  <>
+    <Seo title="Home" description="Description of Home" />
+    Test
+  </>
+)
 
 export default Home

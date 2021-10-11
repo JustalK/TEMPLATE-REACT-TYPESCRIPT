@@ -1,38 +1,31 @@
 module.exports = {
-  parser: 'babel-eslint',
   env: {
     browser: true,
-    node: true,
-    es6: true,
-    jest: true
+    es2021: true
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb/base',
-    'plugin:prettier/recommended'
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
-  plugins: ['react', 'prettier'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 2020,
-    sourceType: 'module'
+    ecmaVersion: 12,
+    sourceType: 'module',
+    project: './tsconfig.json',
+    createDefaultProgram: true
   },
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   settings: {
-    react: {
-      version: 'detect'
-    },
     'import/resolver': {
-      alias: {
-        map: [
-          ['@src', './src'],
-          ['@pages', './src/pages'],
-          ['@styles', './src/styles'],
-          ['@components', './src/components'],
-          ['@services', './src/services'],
-          ['@constants', './src/constants']
-        ]
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
       }
     }
   },
@@ -46,7 +39,15 @@ module.exports = {
         semi: false
       }
     ],
-    'react/prop-types': 0,
-    'arrow-body-style': 0
+    'no-use-before-define': 'off',
+    'max-len': 0,
+    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
+    ],
+    'no-underscore-dangle': 0,
+    '@typescript-eslint/naming-convention': 0
   }
 }

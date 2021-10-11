@@ -11,13 +11,10 @@ import Seo from '@components/Seo'
  * Create the component Secondary
  * @return {Object} Return the dom of the Secondary page
  */
-const Secondary = () => {
-  return (
-    <>
-      <Seo title="Secondary" description="Description of Secondary" />
-      Test 2
-    </>
-  )
-}
+const Secondary = () => (
+  <>
+    Test 2
+  </>
+)
 
 export default Secondary
