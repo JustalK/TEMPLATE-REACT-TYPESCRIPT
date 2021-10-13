@@ -6,12 +6,17 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
+type SeoProps = {
+  title: string,
+  description: string
+}
+
 /**
  * @function Seo
  * Create the component Seo
  * @return {Object} Return the dom of the Seo page
  */
-const Seo = ({ title, description }) => (
+const Seo = ({ title, description }: SeoProps): JSX.Element => (
   <Helmet
     htmlAttributes={{ lang: 'en' }}
     title={title}

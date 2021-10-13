@@ -4,7 +4,7 @@ import { ROUTE_HOME, ROUTE_SECONDARY } from '@constants/routes'
 import Home from '@pages/Home'
 import Secondary from '@pages/Secondary'
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <Router>
       <Switch>
