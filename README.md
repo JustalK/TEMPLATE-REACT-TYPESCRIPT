@@ -1,11 +1,11 @@
 # REACT TYPESCRIPT APP TEMPLATE
 
-[![Maintainability Status](https://api.codeclimate.com/v1/badges/f6f7ed79501f794ce74d/maintainability)](https://codeclimate.com/github/JustalK/REACT-APP/maintainability)
-![David](https://img.shields.io/david/justalk/REACT-APP)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9fa27bdefd4e45e60b52/maintainability)](https://codeclimate.com/github/JustalK/TEMPLATE-REACT-TYPESCRIPT/maintainability)
+![David](https://img.shields.io/david/justalk/TEMPLATE-REACT-TYPESCRIPT)
 
 ## Goal
 
-This project is a template for building react-app with all my favorite tools already configured.
+This project is a template for building react-app with all my favorite tools already configured. Compared to the *REACT-APP-TEMPLATE*, this one is configured to use `TypeScript`.
 
 Obviously, the app is using the latest version of `react`. For avoiding the relative path, I modified the webpack and allowing the import with an alias. I also added the support for sass files.
 
